@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Esma</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    
+    <div>
+        <br>
+        <h1 style="color: #f5eee5;">İslim Esma Akgün</h1>
+        <br><br>
+        <img style="border-radius: 50%;" src="1.jpg" alt="resim bulunamadı" width="200" height="200">
+        <br>
+        <h2>
+            <a href="#hakkimda">Hakkımda</a>
+            <a href="#projeler">Projeler</a>
+            <a href="#yetenekler">Yetenekler</a>
+            <a href="#iletisim">İletişim</a>
+            <a href="javascript:void(0);" id="mesaj-btn">Mesaj Gönder</a> 
+        </h2>
+        <br>
+    </div>
+
+    <div id="mesaj-formu" style="display: none;">
+        <h1>Mesaj Gönder</h1>
+        <form id="mesaj-form" lang="tr">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <span id="email-error" class="error-message" style="display:none;"></span> 
+    
+            <label for="konu">Konu:</label>
+            <input type="text" id="konu" name="konu" required><br><br>
+            <span id="konu-error" class="error-message" style="display:none;"></span> 
+    
+            <label for="aciklama">Açıklama:</label><br>
+            <textarea id="aciklama" name="aciklama" rows="4" cols="50" required></textarea><br><br>
+            <span id="aciklama-error" class="error-message" style="display:none;"></span> 
+    
+            <button type="submit">Mesajı Gönder</button>
+        </form>
+        <br><br>
+        <button id="geri-dön-btn">Geri Dön</button>
+    </div>
+
+   
+    <div id="hakkimda">
+        <h1 class="toggle">Hakkımda</h1>
+        <div class="content">
+            <p>Merhaba! Ben İslim Esma Akgün, Bilgisayar Mühendisliği Öğrencisiyim.</p>
+        </div>
+    </div>
+
+   
+    <div id="projeler">
+        <h1 class="toggle">Projeler</h1>
+        <div class="content">
+            <ul>
+                <li>Proje 1: Detaylar</li>
+                <li>Proje 2: Detaylar</li>
+                <li>Proje 3: Detaylar</li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <div id="yetenekler">
+        <h1 class="toggle">Yetenekler</h1>
+        <div class="content">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>C</li>
+                <li>Java</li>
+            </ul>
+        </div>
+    </div>
+
+ 
+    <div id="iletisim">
+        <h1 class="toggle">İletişim</h1>
+        <div class="content">
+            <h3>Bana ulaşmak için: <a href="mailto:aislimesma@gmail.com">aislimesma@gmail.com</a></h3>
+        </div>
+    </div>
+
+    
+    <div id="footer">
+        <br>
+        <h3>© 2024 İslim Esma Akgün. Tüm Hakları Saklıdır.</h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
